@@ -1,22 +1,22 @@
 // ==============================
-// Gestión de datos
+// Data management
 // ==============================
 
-// ----- TASK 1: Creación del objeto de productos -----
+// ----- TASK 1: Creation of the product object -----
 const products = {
     P01: { id: "P01", nombre: "Corolla", precio: 120_000_000},
     P02: { id: "P02", nombre: "RAV4", precio: 180_000_000},
     P03: { id: "P03", nombre: "Fortuner", precio: 250_000_000}
 };
 
-// ----- TASK 2: Uso de Set en JavaScript -----
+// ----- TASK 2: Using Set in JavaScript -----
 
 const numbers = [10, 20 , 20, 30, 40, 40, 50];
 const uniqueNumbers = new Set(numbers);
 
 console.log("Set sin duplicados:", uniqueNumbers);
 
-// ----- Operaciones -----
+// ----- Operations -----
 
 uniqueNumbers.add(80);
 console.log("Después de add(80):", uniqueNumbers);
@@ -31,14 +31,14 @@ for (const value of uniqueNumbers) {
     console.log("Valor:", value);
 }
 
-// ----- TASK 3: Uso de Map en JavaScript -----
+// ----- TASK 3: Using Map in JavaScript -----
 
 const categoryToProductName = new Map();
 
 categoryToProductName.set("SUV", ["RAV4", "Fortuner"]);
 categoryToProductName.set("Sedan", ["Corolla"]);
 
-// ----- TASK 4: Iteración sobre estructuras -----
+// ----- TASK 4: Iteration over structures -----
 
 console.log("Recorrido del objeto products con for...in:");
 for (const key in products) {
@@ -59,7 +59,7 @@ console.log("Object.keys(products)", Object.keys(products));
 console.log("Object.values(products)", Object.values(products));
 console.log("Object.entries(products)", Object.entries(products));
 
-// TASK 5: Validación de productos
+// TASK 5: Product validation
 
 function isValidProduct(product) {
     const hasValidId = typeof product.id === "string" && product.id.trim() !== "";

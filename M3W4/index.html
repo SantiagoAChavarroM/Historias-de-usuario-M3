@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>m3w4</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <h1>Mini App - Productos</h1>
+  <img src="/logo.png" alt="Logo" class="logo" />
+  <p>Agrega productos, guárdalos y sincroniza con la API.</p>
+
+  <form id="formProducto">
+    <input id="inputNombre" type="text" placeholder="Nombre del producto" />
+    <input id="inputPrecio" type="number" placeholder="Precio" />
+    <button type="submit">Agregar</button>
+  </form>
+
+  <p id="mensaje"></p>
+
+  <ul id="listaItems"></ul>
+
+  <button id="btnSync">Sincronizar con API (GET)</button>
+
+  <script type="module" src="/app.js"></script>
+</body>
+
+</html>

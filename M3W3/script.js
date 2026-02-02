@@ -1,8 +1,8 @@
 // ==============================
-// Mini-app: Notas con DOM + LocalStorage
+// Mini-app: Notes with DOM + LocalStorage
 // ==============================
 
-// ----- Selección e inspección -----
+// ----- Selection and inspection -----
 const inputNota = document.getElementById("inputNota");
 const btnAgregar = document.getElementById("btnAgregar");
 
@@ -12,7 +12,7 @@ console.log("inputNota:", inputNota);
 console.log("btnAgregar:", btnAgregar);
 console.log("listaNotas:", listaNotas);
 
-// ----- Persistencia -----
+// ----- Persistence -----
 let notas = [];
 
 const notasGuardadas = localStorage.getItem("notas");
@@ -24,13 +24,13 @@ if (notasGuardadas) {
     console.log("No hay notas guardadas en LocalStorage.");
 }
 
-// ----- Guardar en LocalStorage -----
+// ----- Save to LocalStorage -----
 function guardarNotas() {
     localStorage.setItem("notas", JSON.stringify(notas));
     console.log("Notas guardadas en LocalStorage:", notas);
 }
 
-// ----- Eliminar notas y actualizar -----
+// ----- Delete notes and update -----
 function eliminarNota(notaAEliminar) {
     const index = notas.indexOf(notaAEliminar);
     if (index === -1) return;
@@ -43,7 +43,7 @@ function eliminarNota(notaAEliminar) {
     console.log("Nota eliminada:", notaAEliminar);
 }
 
-// ----- Render y agregar notas al DOM -----
+// ----- Render and add notes to the DOM -----
 function renderNotas() {
     listaNotas.textContent = "";
 
@@ -65,7 +65,7 @@ function renderNotas() {
     }
 }
 
-// ----- Evento Agregar -----
+// ----- Event Add -----
 function agregarNota() {
     const texto = inputNota.value.trim();
 

@@ -1,17 +1,17 @@
 // ==============================
-// Sistema interactivo de mensajes
+// Interactive messaging system
 // ==============================
 
-// ----- TASK 2: Entrada de datos del usuario -----
+// ----- TASK 2: User data entry -----
 
 const userName = prompt("Ingresa tu nombre:");
 const ageInput = prompt("Ingresa tu edad:");
 
-// -----TASK 3: Validación de la edad -----
+// -----TASK 3: Age validation -----
 
 const userAge = Number(ageInput);
 
-// -----TASK 4: Condicionales y mensajes dinámicos -----
+// -----TASK 4: Conditionals and dynamic messages -----
 
 if (Number.isNaN(userAge)) {
     console.error("Error: Por favor, ingresa una edad válida en números.");

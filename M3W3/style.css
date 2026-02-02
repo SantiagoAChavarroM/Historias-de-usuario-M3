@@ -1,4 +1,4 @@
-/* Layout general y tarjeta */
+/* General layout and card */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #1e1e1e;
@@ -27,7 +27,7 @@ p {
     margin-bottom: 20px;
 }
 
-/* Estilos de formulario y lista */
+/* Form and list styles */
 input {
     width: 70%;
     padding: 10px;
